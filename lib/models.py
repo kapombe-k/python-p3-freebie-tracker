@@ -22,7 +22,6 @@ class Company(Base):
     def __repr__(self):
         return f'<Company {self.name}>'
     
-    
     @property
     def devs(self):
         return list({freebie.dev for freebie in self.freebies})
