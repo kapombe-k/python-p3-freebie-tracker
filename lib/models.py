@@ -32,3 +32,5 @@ class Freebie(Base):
     value = Column(Integer)
     dev_id= Column(ForeignKey('devs.id'))
     company_id=Column(ForeignKey('companies.id'))
+
+    
